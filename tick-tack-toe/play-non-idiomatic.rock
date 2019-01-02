@@ -1,0 +1,169 @@
+Print The Board takes One, Two, Three, Four, Five, Six, Seven, Eight, Nine
+Say ""
+Say Get A Line taking Seven, Eight, Nine
+Say Line Separator taking nothing
+Say Get A Line taking Four, Five, Six
+Say Line Separator taking nothing
+Say Get A Line taking One, Two, Three
+Say ""
+Give Back nothing
+
+Line Separator takes Nada
+Slots is 3
+Ret is ""
+Counter is 0
+Put Pad Count times 2 into Double Pad
+Slot Separator is "-" times Double Pad
+Put "-" with Slot Separator into Slot Separator
+While Counter is lower than Slots
+Build Counter up
+Put Ret with Slot Separator into Ret
+If Counter is not Slots
+Put Ret with "+" into Ret
+
+
+Give Back Ret
+
+Get A Line takes First, Second, Third
+Put Pad taking First, Pad Count into First
+Put Pad taking Second, Pad Count into Second
+Put Pad taking Third, Pad Count into Third
+Give Back First with "|" with Second with "|" with Third
+
+Pad takes Character and Len
+if not Character
+Output is " "
+else
+Put Character into Output
+
+Counter is 0
+While Counter is lower than Len
+Build Counter up
+Output is " " with Output with " "
+
+Give back Output
+
+Clear Screen takes Nada
+Say "=" times 15
+
+Game takes Next, Input, One, Two, Three, Four, Five, Six, Seven, Eight, Nine
+Have Error is true
+if Input is "q"
+Give Back false
+
+If Input is "1" and not One
+Put false into Have Error
+Put Next into One
+
+If Input is "2" and not Two
+Put false into Have Error
+Put Next into Two
+
+If Input is "3" and not Three
+Put false into Have Error
+Put Next into Three
+
+If Input is "4" and not Four
+Put false into Have Error
+Put Next into Four
+
+If Input is "5" and not Five
+Put false into Have Error
+Put Next into Five
+
+If Input is "6" and not Six
+Put false into Have Error
+Put Next into Six
+
+If Input is "7" and not Seven
+Put false into Have Error
+Put Next into Seven
+
+If Input is "8" and not Eight
+Put false into Have Error
+Put Next into Eight
+
+If Input is "9" and not Nine
+Put false into Have Error
+Put Next into Nine
+
+If Have Error
+If Input is not nothing
+Say "Invalid Move. Type 'q' to quit"
+
+Else
+if Next is "o"
+Put "x" into Next
+else
+Put "o" into Next
+
+Clear Screen taking nothing
+Print The Board taking One, Two, Three, Four, Five, Six, Seven, Eight, Nine
+
+Put Check Win taking One, Two, Three, Four, Five, Six, Seven, Eight, Nine into the winner
+if the winner
+Say the winner with " wins!"
+Give Back true
+
+If Yeah taking One and Yeah taking Two and Yeah taking Three and Yeah taking Four and Yeah taking Five and Yeah taking Six and Yeah taking Seven and Yeah taking Eight and Yeah taking Nine
+Say "Too bad, you tie."
+Give Back true
+
+Say "It's " with Next with "'s turn."
+Listen to Input
+Game taking Next, Input, One, Two, Three, Four, Five, Six, Seven, Eight, Nine
+Give Back true
+
+Check Win takes One, Two, Three, Four, Five, Six, Seven, Eight, Nine
+If Slots Match taking One, Two, Three
+Give Back One
+
+If Slots Match taking Four, Five, Six
+Give Back Four
+
+If Slots Match taking Seven, Eight, Nine
+Give Back Seven
+
+If Slots Match taking One, Five, Nine
+Give Back One
+
+If Slots Match taking Seven, Five, Three
+Give Back Seven
+
+If Slots Match taking Seven, Four, One
+Give Back Seven
+
+If Slots Match taking Eight, Five, Two
+Give Back Eight
+
+If Slots Match taking Nine, Six, Three
+Give Back Nine
+
+Give Back false
+
+Slots Match takes First, Second, Third
+if Nah taking First or Nah taking Second or Nah taking Third
+Give Back false
+
+if First is Second and Second is Third
+Give Back true
+
+Give Back false
+
+Yeah takes Arg
+Give Back Arg with 1 is not "1" ("string" is true is giving errors so we need to get creative)
+
+Nah takes Arg
+Give Back not Yeah taking Arg
+
+Print Instructions takes Nada
+Say "Press the number corresponding to the slot you want to play."
+Say "Press 'q' to quit"
+
+(Global variables)
+Pad Count is 1
+
+Print Instructions taking nothing
+Print The Board taking 1, 2, 3, 4, 5, 6, 7, 8, 9
+
+Game taking "o", nothing, nothing, nothing, nothing, nothing, nothing, nothing, nothing, nothing, nothing

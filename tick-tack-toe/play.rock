@@ -165,16 +165,16 @@ Give Back Hope
 If Everything Works taking Loneliness, and Me, and Ice
 Give Back Loneliness
 
-Give Back false
+Give Back nothing
 
 Everything Works takes Body, Blood and Tears
 if The Void taking Body or The Void taking Blood or The Void taking Tears
-Give Back false
+Give Back nobody
 
 if Body is Blood and Blood is Tears
-Give Back true
+Give Back right
 
-Give Back false
+Give Back lies
 
 You Are Satisfied takes All
 My Soul is tranquility
@@ -185,7 +185,7 @@ Give Back All plus My Soul is not My Heart
 
 The Void takes All
 Put You Are Satisfied taking All into Satisfied
-Give Back not You Are Satisfied taking All
+Give Back not Satisfied
 
 my response is ""
 the winter is I
@@ -194,4 +194,4 @@ your lips says x
 
 My Love taking 1, 2, 3, 4, 5, 6, 7, 8, 9
 
-Playing Games taking your arms, nothing, nothing, nothing, nothing, nothing, nothing, nothing, nothing, nothing, nothing
+Playing Games taking your arms, and nothing, nothing, nothing, nothing, nothing, nothing, nothing, nothing, nothing, nothing

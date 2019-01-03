@@ -13,5 +13,5 @@ lot of comments:
 
 ## How do I run these?
 There are more than a couple transpilers and not all of them are compatible
-with each other or with the full spec. The transpiler that I've tasted this
+with each other or with the full spec. The transpiler that I've tested this
 with is [maiden](https://github.com/palfrey/maiden).
